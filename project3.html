@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .container{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            gap: 15px;
+        }
+        .container img{
+            width:100%;
+            margin-bottom: 10px;
+        }
+        button{
+            background-color: blue;
+            font-color: white;
+        }
+        @media screen and (max-width:700px){
+            .container{
+                display: flex;
+                flex-direction: column;
+            }
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>responsive 3</title>
+</head>
+<body>
+    <div class="container">
+        <div><img src="/images/1000_F_217343279_B3oUMemzWjycDq0Qx6kT7lt4RhYYApcB.jpg" alt=""></div>
+        <div><h1>Post title is here</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex, illo asperiores quis commodi reprehenderit in aut, vel possimus dolores quas vitae aspernatur earum? Esse voluptates incidunt quo saepe, molestiae nemo,
+             veritatis veniam aliquam, voluptatibus reiciendis ea. Eaque ratione voluptate ut error omnis vero. Sapiente suscipit debitis ipsum maxime dolores illum?</p>
+        <button>Learn More</button></div>
+    </div>
+        <div class="container">
+        <div><img src="/images/top-view-table-full-food_23-2149209253.avif" alt=""></div>
+        <div><h1>Post title is here</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex, illo asperiores quis commodi reprehenderit in aut, vel possimus dolores quas vitae aspernatur earum? Esse voluptates incidunt quo saepe, molestiae nemo,
+             veritatis veniam aliquam, voluptatibus reiciendis ea. Eaque ratione voluptate ut error omnis vero. Sapiente suscipit debitis ipsum maxime dolores illum?</p>
+        <button>Learn More</button></div>
+    </div>
+</body>
+</html>

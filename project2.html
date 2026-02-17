@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .container{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            gap: 15px;
+        }
+ #a1 img{
+width: 100%;
+        }
+        #a2 {
+display: grid;
+grid-template-columns: repeat(2,1fr);
+gap: 10px;
+        }
+        #a3 img{
+width: 100%;
+height: 90%;
+        }
+        @media screen and (max-width:700px){
+            .container{
+                display: flex;
+                flex-direction: column;
+            }
+       #a2{
+display: flex;
+flex-direction: column;
+       }
+       #a2 div img{
+width: 100%;
+       }
+        }
+      
+ 
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>project-2</title>
+</head>
+<body>
+    <div class="container">
+        <div id="a1"><img src="/images/download.jpeg" alt="">
+        <h2>food item-1</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, id in voluptatum expedita 
+            earum est natus perspiciatis facilis culpa hic eveniet quia laboriosam voluptas qui quo magni assumenda soluta quae?</p></div>
+        <div>
+            <div id="a3"><img src="/images/images (1).jpeg" alt="">
+            <h2>food item-2</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab quae sit ut cumque at maiores 
+                blanditiis magnam, omnis aliquid facilis. Maxime totam inventore dolore rem adipisci natus deserunt ipsa excepturi!</p></div>
+        <div id="a2">
+            <div>
+                <img src="/images/images (2).jpeg" alt="">
+                <h2>food item-3</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos architecto numquam 
+                    saepe eos qui corporis, fugiat quasi possimus voluptatem itaque, doloremque ullam commodi exercitationem quisquam magnam, modi voluptate delectus harum!</p>
+            </div>
+            <div>
+                <img src="/images/images.jpeg" alt="">
+                <h2>food item-4</h2>
+                <p>Nostrum fuga sed magni, atque repellat quos culpa nihil sit quam quasi accusamus excepturi
+                     cumque? Commodi, alias necessitatibus quibusdam illo illum corrupti recusandae nihil, natus dolor nostrum maxime, itaque quas!</p>
+            </div>
+        </div></div>
+    </div>
+</body>
+</html>
