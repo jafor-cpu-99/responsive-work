@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .header,.main,.nav,.sidebar,.footer{
+            border: 1px solid tomato;
+            padding: 10px;
+            background-color: rgb(205, 179, 183);
+            border-radius: 5px;
+        }
+        .header{
+            grid-area: header;
+        }
+        .nav{
+            grid-area: nav;
+        }
+        .main{
+            grid-area: main;
+        }
+        .sidebar{
+            grid-area: sidebar;
+        }
+        .footer{
+            grid-area: footer;
+        }
+        .container{
+            display: grid;
+            grid-template-areas: 
+            "header header header"
+            "nav main sidebar"
+            "footer footer footer";
+        }
+        @media screen and (max-width:700px){
+            .container{
+                grid-template-areas: 
+                "header"
+                "nav"
+                "main"
+                "sidebar"
+                "footer";
+            }
+        
+        }
+            @media screen and (min-width:701px) and (max-width:1000px){
+                .container{
+                    grid-template-areas: 
+                    "header header"
+                    "nav main"
+                    "nav sidebar"
+                    "footer footer";
+                }
+            }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Area Layout</title>
+</head>
+<body class="container">
+    <header class="header">
+        <h3>The Header</h3>
+
+    </header>
+    <nav class="nav">
+        <ul>
+            <li><a href="">Nav 1</a></li>
+            <li><a href="">Nav 2</a></li>
+            <li><a href="">Nav 3</a></li>
+        </ul>
+    </nav>
+    <main class="main">
+        <h1>Main Article 1</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis tempore, nesciunt itaque nihil 
+            laborum praesentium nostrum distinctio debitis quibusdam eaque ratione ea delectus quam adipisci impedit illum culpa quasi. Tempore.</p>
+            <h1>Main Article 2</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione modi totam, nesciunt cumque voluptatem velit ab laboriosam commodi! Nobis cum saepe aliquam enim veritatis suscipit doloribus. Quod aliquam molestias voluptatum?</p>
+    </main>
+    <aside class="sidebar">
+        <div>sidebar</div>
+        <div>advertise</div>
+    </aside>
+    <footer class="footer">
+        <h4>the Footer</h4>
+    </footer>
+</body>
+</html>

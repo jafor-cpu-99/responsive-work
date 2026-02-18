@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        h1{
+            text-align: center;
+        }
+        .a img{
+            width: 100%;
+            height: 400px;;
+        }
+        .container{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            gap: 5px;
+        }
+        img{
+            width: 100%;
+        }
+     .sub{
+        display: flex;
+        flex-direction: column;
+     }
+     .sub img{
+        height: 170px;
+     }
+     .subs{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+     }
+     .subs img{
+        height: 180px;
+     }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example -1</title>
+</head>
+<body>
+    <h1>Here is my image collage</h1>
+    <div class="a"><img src="/images/A.jpg" alt=""></div>
+    <div class="container">
+        <img src="/images/B.jpg" alt="">
+        <img src="/images/C.jpg" alt="">
+        <div class="sub">
+            <img src="/images/D.jpg" alt=""><img src="/images/E.jpg" alt="">
+        </div>
+        <img src="/images/F.jpg" alt="">
+        <div class="subs">
+            <img src="/images/G.jpg" alt=""><img src="/images/G.jpg" alt=""><img src="/images/G.jpg" alt=""><img src="/images/G.jpg" alt="">
+        </div>
+        <img src="/images/I.jpg" alt="">
+    </div>
+</body>
+</html>
