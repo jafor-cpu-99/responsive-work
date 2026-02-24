@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation</title>
+    <style>
+        .stage{
+            height: 300px;
+            width: 500px;
+            border: 2px solid purple;
+            background-color: lightgreen;
+        }
+        .ball{
+            height: 50px;
+            width: 50px;
+            border: 1px solid red;
+            background-color: red;
+            border-radius: 50%;
+           position: relative;
+           left: 0px;
+           top: 0px;
+           animation: bounce 5s ease-in-out infinite alternate;
+        }
+        @keyframes bounce{
+            0%{
+                left: 0px;
+            }
+            25%{
+                left: 100px;
+                top: 150px;
+                background-color: blue;
+            }
+    100%{
+                left: 450px;
+                top: 0px;
+                background-color: red;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="stage">
+        <div class="ball"></div>
+    </div>
+</body>
+</html>
