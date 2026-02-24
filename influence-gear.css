@@ -63,3 +63,70 @@ div li{
 .first img{
     background-image: url(/images/logos/Circle\ design.svg);
 }
+.cart{
+  
+    height: 110px;
+    width: 1110px;
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    gap:61px;
+    margin-top: 50px;
+   margin-left: 350px;
+   align-items: center;
+   justify-content: center;
+}
+@media screen and (max-width:600px){
+    .first{
+        flex-direction:column-reverse;
+        
+    }
+    ul{
+        flex-direction: column;
+        
+    }
+    ul div{
+        display: none;
+        margin: 0px;
+    }
+  .cart{
+    height: auto;
+    width: 100%;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto auto;   /* 2 rows */
+  gap: 20px;
+
+  align-items: center;     /* vertical alignment */
+  justify-items: center;
+  margin-left: 0px;
+  }
+  .first>div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .first h1{
+    width: 98%;
+    height: auto;
+  }
+  .first p{
+    height: 65px;
+    width: 360px;
+  }
+
+}
+.collection{
+   
+  width: 2000px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+     height:1662px;
+    width: 1047px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 15px;
+}
