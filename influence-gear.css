@@ -173,6 +173,36 @@ gap: 90px;
 .wri botton{
  margin-top: 0px;
 }
+.foot{
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color:rgb(33, 9, 33);
+}
+.foot h1{
+    height: 36px;
+    width: 243px;
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
+.foot p{
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+}
+.foot div{
+    display: flex;
+   gap: 20px;
+}
+.foot img{
+    height: 32px;
+    width: 32px;
+   filter: grayscale(100%);
+  
+}
 @media screen and (max-width:600px){
     .first{
         flex-direction:column-reverse;
